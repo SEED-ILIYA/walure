@@ -1,52 +1,48 @@
-﻿/*Console.WriteLine("Hello, World!");
-Console.WriteLine("Hey Beautiful people");
-Console.WriteLine("hello");*/
-//MyMethod();
+﻿//Type casting
+//1. implicit casting = converting a smaller type to a larger type
+//2. explicit casting = converting a larger type to a smaller type
 
+//implicit casting
+using System.Diagnostics;
 
-////method
-//static void MyMethod()
-//{
-//    Console.WriteLine("welcome to the academy!");
-//}
+//int number = 789;
 
+//double doublenumber = number;
 
-//datatypes
-//string
-//integer int
-//float
-//double
-//decimal
-//boolean bool
-//char
-//byte
-//long
-//datetime
+//Console.WriteLine(number);
+//Console.WriteLine(doublenumber);
 
-//datatype      //variable              //value
-string           word               = " welcome back";
-Console.WriteLine(word);
+////explicit casting
 
-int number = 679988989;
-float num = 93291238485693278.756f;
-double n = 32174187463871849.236164144372173;
-decimal y = 23167451647163464.845362m;
-bool x = true;
-char w = 'a';
-long r = 3456521383783281744;
-byte l = 99;
-DateTime dt = DateTime.Now;
-Console.WriteLine(dt);
+double newvalue = 567.1223;
+int intnumber = (int)newvalue;
+Console.WriteLine(newvalue);
+Console.WriteLine(intnumber);
+
+//type convertion method
+int stringvalue = 50;
+Console.WriteLine(Convert.ToString(stringvalue));
+
+MyMethod();
+MyMthod2();
+Console.ReadKey();
 
 
 
+static void MyMethod()
+{
+    Console.WriteLine("Enter your fullname:");
+
+    string fullname = Console.ReadLine();
+
+    Console.WriteLine(" welcome"+ " " + fullname);
+}
 
 
+static void MyMthod2()
+{
+    Console.WriteLine("Enter your years of experience");
 
-
-
-
-
-
-
-
+    int experience = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("your years of experience is:" + experience);
+}
