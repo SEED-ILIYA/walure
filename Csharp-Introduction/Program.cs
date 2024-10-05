@@ -1,48 +1,45 @@
-﻿//Type casting
-//1. implicit casting = converting a smaller type to a larger type
-//2. explicit casting = converting a larger type to a smaller type
-
-//implicit casting
-using System.Diagnostics;
-
-//int number = 789;
-
-//double doublenumber = number;
-
-//Console.WriteLine(number);
-//Console.WriteLine(doublenumber);
-
-////explicit casting
-
-double newvalue = 567.1223;
-int intnumber = (int)newvalue;
-Console.WriteLine(newvalue);
-Console.WriteLine(intnumber);
-
-//type convertion method
-int stringvalue = 50;
-Console.WriteLine(Convert.ToString(stringvalue));
-
-MyMethod();
-MyMthod2();
-Console.ReadKey();
+﻿//Operators
+//1.Arithmetic operators
+//2.logical operators
+//3.assignment operators
+//4.comparison operators
 
 
+//arithmetic operators
+//+,-,*,/,%,++,--
 
-static void MyMethod()
-{
-    Console.WriteLine("Enter your fullname:");
+int v1 = 23 + 78;
+Console.WriteLine(v1);
+int v2 = v1 - 40;
+Console.WriteLine(v2);
+int v3 = v1 * v2;
+Console.WriteLine(v3);
+int v4 = 12 / 2;
+Console.WriteLine(v4);
+v4++;
+Console.WriteLine(v4);
+v2--;
+Console.WriteLine(v2);
 
-    string fullname = Console.ReadLine();
+//Comparison operator
+// ==, !=,>,<, >=,<=
 
-    Console.WriteLine(" welcome"+ " " + fullname);
-}
+int y = 89;
+int x = 50;
+int v = 50;
+Console.WriteLine(y <= x);
+
+//logical operators
+//&&
+//||
+//!
+Console.WriteLine(x!=v || y > x);
+
+//assignment operator
+//=,+=,-=,*=,/=
+
+double num2 = 67;
+num2 *= 56;
+Console.WriteLine(num2);
 
 
-static void MyMthod2()
-{
-    Console.WriteLine("Enter your years of experience");
-
-    int experience = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("your years of experience is:" + experience);
-}
