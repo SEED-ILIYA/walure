@@ -6,30 +6,22 @@ using System.Threading.Tasks;
 
 namespace Csharp_Introduction
 {
-    //accessmodifier
-    //1.private
-    //2.public
-    //3.internal
-    //4. protected
+   //static and Nonstatic/instance
     class Student
     {
-        //members  
-        //field
-        //properties
-        //method
-        //constructor
-        //destructor
-        //indexers
-
-        public int v = 90; //field
-        public string Name { get; set; } //property
-
-        public static void MyMethod1()
+        string Name;
+        int Age;
+        public Student(string myname, int myage)
         {
-
+            Name = myname;
+            Age = myage;
+        }
+        public void MyMethod1()
+        {
+            Console.WriteLine("My Name is {0}, i'm {1} years old", Name, Age);
         }
 
-        public static void MyMethod2(int i, int x)
+        public void MyMethod2(int i, int x)
         {
 
         }

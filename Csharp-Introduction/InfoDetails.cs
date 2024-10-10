@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Csharp_Introduction
 {
-    internal class InfoDetails
+    public static class InfoDetails
     {
+        public static int x = 67;
+
+        public static int MyProperty { get; set; }
+
+        public static void MyMethod ()
+        {
+            Console.WriteLine("hello");
+        }
+
     }
 }
