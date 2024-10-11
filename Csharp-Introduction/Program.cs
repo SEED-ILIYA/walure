@@ -14,52 +14,33 @@
 //dowhile
 
 
-//if/else
-int v = 45;
-int x = 45;
-int r = 2;
-int g = 5;
+//for
+    //initializer, condition, iterator
+//for(int i = 0; i<10; i++)
+//{
+//    Console.WriteLine(i);
+//}
 
-if(x == v || r > 5)
+int[] number = { 5, 6, 7, 8, 9, 0, 10, 2, 3, 3, 4, 4 };
+string[] Words = { "chalk", "board", "pen", "bin", "gate" };
+//foreach
+foreach(string x in Words)
 {
-    Console.WriteLine("you won");
-}
-else if (x < v && r ==5)
-{
-    Console.WriteLine("almost there please try again");
-}
-else
-{
-    Console.WriteLine("you loose");
+    Console.WriteLine(x);
 }
 
-Console.WriteLine("pick your lucky number from 1-7");
-int month = int.Parse(Console.ReadLine());
-
-switch (month)
+//while
+int i = 0;
+while (i < 5)
 {
-    case 1:
-        Console.WriteLine("January");
-        break;
-    case 2:
-        Console.WriteLine("February");
-        break;
-    case 3:
-        Console.WriteLine("March");
-        break;
-    case 4:
-        Console.WriteLine("April");
-        break;
-    case 5:
-        Console.WriteLine("May");
-        break;
-    case 6:
-        Console.WriteLine("June");
-        break;
-    case 7:
-        Console.WriteLine("July");
-        break;
-        default:
-        Console.WriteLine("the value does not exist");
-        break;
+    Console.WriteLine(i);
+    i++;
 }
+
+//do while
+int y = 0;
+do
+{
+    Console.WriteLine(y);
+    y+=2;
+}while(y<10);
