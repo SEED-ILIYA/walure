@@ -1,17 +1,6 @@
-﻿//escape sequence
-//\'
-//\"
-//\
-//\n
-//\t
-//\0
-//\b
+﻿//inheritance
+using Csharp_Introduction;
 
-string word = "\tPlan \n Execute \n Don't give up";
-Console.WriteLine(word);
-string result = "please \" can you see it \"";
-Console.WriteLine(result);
-string value = "\bvalue";
-Console.WriteLine(value);
-string v = "c:\\web\\page\\file.cs";
-Console.WriteLine(v);
+Student student = new Student();
+student.MyMethod1();
+Courseinfo.CourseName = "c#";
