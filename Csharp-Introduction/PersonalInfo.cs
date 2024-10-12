@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp_Introduction
 {
-    public class PersonalInfo : Courseinfo
+    public class PersonalInfo
     {
         public static string Name;
         public static int Age;
@@ -16,16 +16,29 @@ namespace Csharp_Introduction
             Console.WriteLine("Hello there");
         }
 
-        public  void MyMethod1()
+        public void MyMethod1()
         {
             Console.WriteLine("Welcome Back");
         }
     }
 
-    public class Courseinfo
+    public enum DaysOfTheWeek
     {
-        public static string CourseName;
-
+        Monday=2,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
     }
+
+    public enum Gender
+    { 
+        Male = 5,
+        Female,
+        Unknown
+    }
+
 
 }

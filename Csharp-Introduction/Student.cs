@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Csharp_Introduction
 {
    //derived class
-    class Student : PersonalInfo 
+    class Student : PersonalInfo, IGadgets,IAnimal
     {
         public static int StudentAge()
         {
@@ -18,5 +18,29 @@ namespace Csharp_Introduction
             return v1;
         }
 
+        public void BodyParts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void MyMethod()
+        {
+            Console.WriteLine("");
+        }
+
+        public void MyMethod(string method)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string MyMethod2()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Sound()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -3,4 +3,5 @@ using Csharp_Introduction;
 
 Student student = new Student();
 student.MyMethod1();
-Courseinfo.CourseName = "c#";
+int day = (int)DaysOfTheWeek.Thursday;
+Console.WriteLine(day);
