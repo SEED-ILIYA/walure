@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Csharp_Introduction
 {
    //derived class
-    class Student : PersonalInfo, IGadgets,IAnimal
+    class Student 
     {
         public static int StudentAge()
         {
