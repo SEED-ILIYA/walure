@@ -1,21 +1,10 @@
-﻿//Generics
-using Csharp_Introduction;
+﻿using Csharp_Introduction;
 
-Student.Studentdetails("cup","jug");
+Calculate c1 = new Calculate();
+c1.Name = "Gideon";
+c1.Id = 106;
+c1.ReadDetails();
 
-Student.StudentCourse<int>(5,6);
-Student.StudentCourse<double>(5.89, 666.7);
-Student.StudentCourse<string>("alter", "ego");
+Calculate c2 = new Calculate(109,"Deolu");
+c2.ReadDetails();
 
-Calculate<int> calculate = new Calculate<int>();
-calculate.Add(3);
-calculate.Add(5);
-calculate.Add(6);
-calculate.Add(9);
-calculate.Add(4);
-
-
-
-var result = calculate.values;
-foreach(var value in result)
-    Console.WriteLine(value);
