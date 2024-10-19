@@ -1,10 +1,21 @@
-﻿//inheritance
-int a = 3;
-int[] b = { 2, 3, 4, 5, 6, 7, 8, 9, 0, 6 };
-//print all values
-foreach(int x in b)
-    Console.WriteLine(x);
-//print out single value
-Console.WriteLine(b[5]);
+﻿//Generics
+using Csharp_Introduction;
 
-string[] Schoolmaterials = new string[4] { "pen", "chalk", "biro", "board" };
+Student.Studentdetails("cup","jug");
+
+Student.StudentCourse<int>(5,6);
+Student.StudentCourse<double>(5.89, 666.7);
+Student.StudentCourse<string>("alter", "ego");
+
+Calculate<int> calculate = new Calculate<int>();
+calculate.Add(3);
+calculate.Add(5);
+calculate.Add(6);
+calculate.Add(9);
+calculate.Add(4);
+
+
+
+var result = calculate.values;
+foreach(var value in result)
+    Console.WriteLine(value);

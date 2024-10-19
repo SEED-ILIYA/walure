@@ -9,38 +9,20 @@ namespace Csharp_Introduction
    //derived class
     class Student 
     {
-        public static int StudentAge()
+        public static void StudentAge()
         {
-            return 78;
+            Console.WriteLine("hello");
         }
-        public static string StudentCourse( string v1, int v2)
+        public static T StudentCourse<T>( T value1, T value2)
         {
-            return v1;
-        }
-
-        public void BodyParts()
-        {
-            throw new NotImplementedException();
+            return value1;
         }
 
-        public void MyMethod()
+        public static string Studentdetails(string value1, string value2)
         {
-            Console.WriteLine("");
+            return value1;
         }
 
-        public void MyMethod(string method)
-        {
-            throw new NotImplementedException();
-        }
 
-        public string MyMethod2()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Sound()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
