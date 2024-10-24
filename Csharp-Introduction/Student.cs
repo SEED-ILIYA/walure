@@ -6,25 +6,14 @@ using System.Threading.Tasks;
 
 namespace Csharp_Introduction
 {
-   //derived class
-     class Student 
+    //derived class
+    class Student : Calculate
     {
-        public static void StudentAge()
+        public override void MyMethod()
         {
-            Console.WriteLine("hello");
+            Console.WriteLine("this is abtract method");
         }
-        public static T StudentCourse<T>( T value1, T value2)
-        {
-            return value1;
-        }
-
-        public static string Studentdetails(string value1, string value2)
-        {
-            return value1;
-        }
-
-
     }
 
-   
+
 }

@@ -6,36 +6,21 @@ using System.Threading.Tasks;
 
 namespace Csharp_Introduction
 {
-     struct Calculate 
+    //abstract class
+    public abstract class Calculate 
     {
-        private int id;
-        private string name;
+        int id; //field
 
-        public int Id //property
+        string name {  get; set; } //property
+
+        //abstract method
+        public abstract void MyMethod();
+
+        //noneabstract method
+        public void Print()
         {
-            get { return this.id; }
-            set { this.id = value; }
+            Console.WriteLine("welcome to the abstract class");
         }
-
-        public string Name //property
-        {
-            get { return this.name; }
-            set { this.name = value; }
-        }
-
-        //constructor
-        public Calculate(int id, string name)
-        {
-            this.id = id;
-            this.name = name;
-
-        }
-
-
-        public void ReadDetails()
-        {
-            Console.WriteLine("Id = {0} && the name = {1}",this.id,this.name);
-        }
-
+       
     }
 }
