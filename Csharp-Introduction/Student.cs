@@ -6,12 +6,23 @@ using System.Threading.Tasks;
 
 namespace Csharp_Introduction
 {
-    //derived class
-    class Student : Calculate
+   public delegate bool StudentCheck(Student stud);
+   public class Student 
     {
-        public override void MyMethod()
+     
+        public int Id { get; set; } 
+        public string Name { get; set; }    
+        public int Salary { get; set; }
+        public int Level {  get; set; }
+
+        public static void StudentStatus(List<Student> studentslist, StudentCheck Ischeck)
         {
-            Console.WriteLine("this is abtract method");
+            foreach (Student student in studentslist)
+            {
+                if(Ischeck(student))
+                    Console.WriteLine(student.Name +"  "+ "Graduated");
+                
+            }
         }
     }
 
