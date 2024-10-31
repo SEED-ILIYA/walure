@@ -1,9 +1,12 @@
-﻿using Csharp_Introduction;
+﻿//preprocessor
 
-int v = 23;
-string x = "pot";
+//#if (DEBUG && !VC_V10)
+//Console.WriteLine("the value is define");
+//#else
+//Console.WriteLine("the value is not define");
+//#endif
+//Console.ReadKey();
 
+using Csharp_Introduction;
 
-
-var result = v.IsGreater(100);
-Console.WriteLine(result);
+Calculator.Addition(89, 90);
