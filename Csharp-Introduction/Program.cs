@@ -1,12 +1,30 @@
-﻿//preprocessor
+﻿//icollection
+//ilist
+//list
+//ienumerable
 
-//#if (DEBUG && !VC_V10)
-//Console.WriteLine("the value is define");
-//#else
-//Console.WriteLine("the value is not define");
-//#endif
-//Console.ReadKey();
+using System.Collections.ObjectModel;
 
-using Csharp_Introduction;
+List<string> Products = new List<string>();
+Products.Add("Chalk");
+Products.Add("Table");
+Products.Add("Socks");
+Products.Add("Shoe");
+Products.Add("Paint");
+Products.Add("jug");
+Products.Add("cup");
 
-Calculator.Addition(89, 90);
+static void Ilistmethod(IList<string> ilistmethod)
+{
+    ilistmethod.Add("nylon");
+    ilistmethod.RemoveAt(2);
+
+
+}
+static void Icollectionmethod(ICollection<string> collectionlist)
+{
+    collectionlist.Add("Couch");
+}
+static void enumerablemethod(IEnumerable<string> enumerablelist)
+{
+}
