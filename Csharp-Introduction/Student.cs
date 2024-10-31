@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Csharp_Introduction
 {
-   public delegate bool StudentCheck(Student stud);
-   public class Student 
+    //extension method
+   public static class Student 
     {
-        public int Id { get; set; } 
-        public string Name { get; set; }    
-        public int Salary { get; set; }
-        public int Level {  get; set; }
+      public static bool IsGreater(this int i, int  i2)
+        {
+            return i > i2;
+        }
     }
 
 
