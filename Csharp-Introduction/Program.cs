@@ -1,17 +1,16 @@
-﻿using System.Text;
+﻿using Csharp_Introduction;
+using System.Text;
 
-string userstring = "c#";
-userstring += "is a OOP";
-userstring += "language";
+Student[] stud = new Student[3];
 
-Console.WriteLine(userstring);
+stud[0] = new Student();
+stud[1] = new Studentinfo();
+stud[2] = new StudentList();
 
-
-StringBuilder newuserstring = new StringBuilder("welcome");
-newuserstring.Append(" to c#");
-newuserstring.Append(" class");
-Console.WriteLine(newuserstring);
-
+foreach(Student stt in stud)
+{
+    stt.PrintFullName();
+}
 
 
 
