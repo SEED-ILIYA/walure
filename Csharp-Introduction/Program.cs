@@ -1,30 +1,15 @@
-﻿//icollection
-//ilist
-//list
-//ienumerable
+﻿//Dictionary
+Dictionary<string, int> infodetails  = new Dictionary<string, int>();
+infodetails.Add("John", 89);
+infodetails.Add("Ben", 59);
+infodetails.Add("Serah", 9);
+infodetails.Add("Todd", 8);
+infodetails.Add("Ken", 91);
+infodetails.Add("grace", 19);
+infodetails.Add("Shola", 29);
 
-using System.Collections.ObjectModel;
 
-List<string> Products = new List<string>();
-Products.Add("Chalk");
-Products.Add("Table");
-Products.Add("Socks");
-Products.Add("Shoe");
-Products.Add("Paint");
-Products.Add("jug");
-Products.Add("cup");
-
-static void Ilistmethod(IList<string> ilistmethod)
+foreach(var info in infodetails)
 {
-    ilistmethod.Add("nylon");
-    ilistmethod.RemoveAt(2);
-
-
-}
-static void Icollectionmethod(ICollection<string> collectionlist)
-{
-    collectionlist.Add("Couch");
-}
-static void enumerablemethod(IEnumerable<string> enumerablelist)
-{
+    Console.WriteLine("key: {0}, Value:{1}",info.Key, info.Value);
 }
